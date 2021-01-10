@@ -1,16 +1,16 @@
 import UIKit
- 
- @UIApplicationMain
- class AppDelegate: UIResponder, UIApplicationDelegate {
+
+@UIApplicationMain
+class AppDelegate: UIResponder, UIApplicationDelegate {
   
   var window: UIWindow?
   let tintColor =  UIColor(red: 242/255, green: 71/255, blue: 63/255, alpha: 1)
-
+  
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     customizeAppearance()
     return true
   }
-
+  
   // MARK - App Theme Customization
   
   private func customizeAppearance() {
@@ -20,5 +20,7 @@ import UIKit
     UINavigationBar.appearance().tintColor = UIColor.white
     UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key(rawValue: NSAttributedString.Key.foregroundColor.rawValue):UIColor.white]
   }
- }
- 
+  
+}
+
+
